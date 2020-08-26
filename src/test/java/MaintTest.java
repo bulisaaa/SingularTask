@@ -11,7 +11,6 @@ public class MaintTest extends ChromeRunner {
     public void Login() throws InterruptedException {
         //Xpath ცუდია ID-ები სჯობს მარა არ გამოვიდა  არ მუშაობდა ამიტომ ავიღე
         //  Thread.sleep -იც ცუდია მარა რო გავუშვი რამოდენიმჯერ იმუშავა,ვერ ასწრებს სახელის ჩაწერას
-        Thread.sleep(2000);
         common.waitUntilByXpathsentkey(driver, loginPageSelectors.UserName, "qa_3")
                 .waitUntilByXpathsentkey(driver, loginPageSelectors.Password, "Testing");
         driver.findElement(By.xpath(loginPageSelectors.LoginButton)).click();

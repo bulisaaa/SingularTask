@@ -1,0 +1,6 @@
+Feature:  Regular Authentication
+  Scenario: Logging in
+    Given I am on "https://www-gli.singulardev.uk/"
+    When I fill in "Username" with "qa_3"
+    And I press "Login"
+  Then I should see ID
