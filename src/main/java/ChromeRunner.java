@@ -19,7 +19,7 @@ public class ChromeRunner {
 
     @AfterClass
     public static void closeDriver() {
-        //  driver.quit();
+        driver.quit();
     }
 
     public void OpenChrome(String Link) {
@@ -35,4 +35,6 @@ public class ChromeRunner {
 
         driver.get(Link);
     }
+
+
 }
