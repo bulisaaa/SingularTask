@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MaintTest extends ChromeRunner {
+public class MaintTest extends ChromeRunner  {
     static LoginPageSelectors loginPageSelectors = new LoginPageSelectors();
     CommonClass common = new CommonClass();
 
